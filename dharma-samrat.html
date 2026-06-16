@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dharma Samrat Swami Karpatri Ji Maharaj | Govardhan Math Puri</title>
+    <meta name="description" content="Life and legacy of Dharma Samrat Swami Karpatri Ji Maharaj — the great saint, Vedic scholar, and champion of Sanatana Dharma associated with Govardhan Math.">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <style>
+        .ds-quote{border-left:3px solid var(--gold);padding:20px 24px;background:var(--bg2);border-radius:0 12px 12px 0;margin:24px 0;font-style:italic;font-size:1.05rem;color:var(--gold);}
+        .ds-timeline{position:relative;padding-left:32px;}
+        .ds-timeline::before{content:'';position:absolute;left:8px;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--gold),transparent);}
+        .ds-tl-item{position:relative;margin-bottom:32px;}
+        .ds-tl-item::before{content:'';position:absolute;left:-28px;top:6px;width:12px;height:12px;background:var(--gold);border-radius:50%;border:2px solid var(--bg);}
+        .ds-tl-year{font-size:.8rem;color:var(--gold);font-weight:700;letter-spacing:.1em;margin-bottom:4px;}
+        .ds-tl-item h4{font-size:1rem;margin-bottom:6px;}
+        .ds-tl-item p{font-size:.9rem;color:var(--text2);}
+    </style>
+</head>
+<body>
+    <nav id="main-nav">
+        <a href="index.html" class="logo"><img src="assets/logo.png" alt="Govardhan Math"><span class="logo-text">Govardhan Math</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="shankaracharya.html">Shankaracharya</a></li>
+            <li><a href="bharati-krishna.html">Bharati Krishna Ji</a></li>
+            <li><a href="dharma-samrat.html" class="active">Dharma Samrat</a></li>
+            <li><a href="institutions.html">Institutions</a></li>
+            <li><a href="gaushala.html">Gaushala</a></li>
+            <li><a href="vedic-math.html">Vedic Math</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">☀️</button>
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="page-hero" style="background:linear-gradient(160deg,#0f0800 0%,#2a1500 40%,#451e00 100%);min-height:65vh;display:flex;align-items:center;padding-top:80px;position:relative;overflow:hidden;">
+        <div class="container" style="position:relative;z-index:1;">
+            <div class="grid-2" style="align-items:center;gap:48px;">
+                <div>
+                    <span class="section-label" style="color:#c9a55c;">धर्म सम्राट</span>
+                    <h1 style="font-size:clamp(2rem,5vw,3.5rem);margin:16px 0 12px;color:#fff;">Dharma Samrat Swami Karpatri Ji Maharaj</h1>
+                    <p style="font-size:1rem;color:rgba(255,255,255,.8);margin-bottom:16px;font-style:italic;">स्वामी करपात्री जी महाराज — धर्म सम्राट</p>
+                    <p style="color:rgba(255,255,255,.72);line-height:1.8;font-size:.95rem;">A luminary of Sanatana Dharma, towering Vedic scholar, fearless social reformer, and a beloved figure revered by the Shankaracharya tradition — Swami Karpatri Ji Maharaj embodied the living spirit of Vaishnava-Shaiva unity in India.</p>
+                    <div style="margin-top:24px;display:flex;gap:16px;flex-wrap:wrap;">
+                        <div style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:8px;padding:12px 20px;text-align:center;">
+                            <div style="font-size:1.4rem;color:#c9a55c;font-weight:700;">1907</div>
+                            <div style="font-size:.75rem;color:rgba(255,255,255,.6);margin-top:2px;">Birth Year</div>
+                        </div>
+                        <div style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:8px;padding:12px 20px;text-align:center;">
+                            <div style="font-size:1.4rem;color:#c9a55c;font-weight:700;">1982</div>
+                            <div style="font-size:.75rem;color:rgba(255,255,255,.6);margin-top:2px;">Mahasamadhi</div>
+                        </div>
+                        <div style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:8px;padding:12px 20px;text-align:center;">
+                            <div style="font-size:1.4rem;color:#c9a55c;font-weight:700;">Kashi</div>
+                            <div style="font-size:.75rem;color:rgba(255,255,255,.6);margin-top:2px;">Principal Abode</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-frame reveal-right" style="height:500px;border-radius:var(--radius);overflow:hidden;">
+                        <img src="assets/dharma_samrat_karpatri.jpg" alt="Dharma Samrat Swami Karpatri Ji Maharaj" style="object-fit:cover;object-position:center top;width:100%;height:100%;">
+                        <div class="img-caption">Dharma Samrat Swami Karpatri Ji Maharaj</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who Was He -->
+    <section>
+        <div class="container">
+            <div class="grid-2" style="align-items:start;gap:48px;">
+                <div class="reveal-left">
+                    <span class="section-label">Background</span>
+                    <h2 style="margin:14px 0 20px;">The Saint Who Lived with Nothing</h2>
+                    <p class="serif">Born as <strong>Harihar Narayan Ojha</strong> in 1907, in a Brahmin family in Pratapgarh, Uttar Pradesh, his extraordinary intellect and spiritual inclination were apparent from childhood. He mastered Sanskrit, the Vedas, Upanishads, and Shastras at a remarkably young age.</p>
+                    <p class="serif" style="margin-top:14px;">Renouncing all worldly possessions including cooking utensils (the word "Karpatri" comes from <em>kara</em> = hand and <em>patra</em> = vessel — he used only his hands as his bowl), he became one of the most celebrated <em>parivrajaka</em> (wandering) monks of India.</p>
+                    <div class="ds-quote">
+                        "Dharma is not merely a religion — it is the eternal cosmic law that sustains existence. To abandon it is to invite the collapse of all civilization."
+                        <div style="margin-top:8px;font-size:.8rem;font-style:normal;color:var(--text2);">— Swami Karpatri Ji Maharaj</div>
+                    </div>
+                    <p class="serif">His title <strong>"Dharma Samrat"</strong> (Emperor of Dharma) was bestowed upon him by the Shankaracharyas of all four Amnaya Peethams and hundreds of sages in recognition of his unparalleled service to Sanatana Dharma.</p>
+                </div>
+                <div class="reveal-right">
+                    <span class="section-label">Timeline</span>
+                    <h2 style="margin:14px 0 24px;">Life & Mission</h2>
+                    <div class="ds-timeline">
+                        <div class="ds-tl-item">
+                            <div class="ds-tl-year">1907</div>
+                            <h4>Birth in Pratapgarh</h4>
+                            <p>Born as Harihar Narayan Ojha to a learned Brahmin family in Uttar Pradesh.</p>
+                        </div>
+                        <div class="ds-tl-item">
+                            <div class="ds-tl-year">~1920s</div>
+                            <h4>Sannyas Diksha</h4>
+                            <p>Received Sannyas from Swami Vishuddhananda Saraswati of Kashi. Took the vow of complete renunciation.</p>
+                        </div>
+                        <div class="ds-tl-item">
+                            <div class="ds-tl-year">1940</div>
+                            <h4>Founded Dharma Sangha</h4>
+                            <p>Established the Dharma Sangha, a monastic-scholarly organization dedicated to the protection and propagation of Vedic Dharma.</p>
+                        </div>
+                        <div class="ds-tl-item">
+                            <div class="ds-tl-year">1948</div>
+                            <h4>Ram Rajya Parishad</h4>
+                            <p>Founded the Ram Rajya Parishad political party to contest elections and uphold Dharmic governance.</p>
+                        </div>
+                        <div class="ds-tl-item">
+                            <div class="ds-tl-year">1966</div>
+                            <h4>Cow Protection Movement</h4>
+                            <p>Led the massive Gohatya Bandh Andolan — the historic cow protection movement in Delhi involving hundreds of saints and millions of followers.</p>
+                        </div>
+                        <div class="ds-tl-item">
+                            <div class="ds-tl-year">1982</div>
+                            <h4>Mahasamadhi</h4>
+                            <p>Attained Mahasamadhi on February 7, 1982, in Kashi (Varanasi).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contributions -->
+    <section style="background:var(--bg2);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label reveal">Contributions</span>
+                <h2 class="section-title reveal">Defender of Sanatana Dharma</h2>
+                <p class="section-subtitle reveal">Decades of fearless service to the ancient heritage of Bharat</p>
+            </div>
+            <div class="grid-3">
+                <div class="card reveal">
+                    <span class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/></svg></span>
+                    <h3>Vedic Scholarship</h3>
+                    <p>Mastered all six Vedangas, Nyaya, Mimamsa, Vedanta, Vyakarana, and the principal Upanishads. Authored numerous Shastra commentaries.</p>
+                </div>
+                <div class="card reveal">
+                    <span class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c6.23-.05 7.87-5.57 7.5-10-.36-4.34-3.95-9.96-7.5-10-3.55.04-7.14 5.66-7.5 10-.37 4.43 1.27 9.95 7.5 10z"/><path d="M12 22V2"/></svg></span>
+                    <h3>Cow Protection</h3>
+                    <p>A lifelong crusader for Gau Raksha. Led the historic 1966 Delhi march — the largest-ever assembly of saints — demanding a constitutional ban on cow slaughter.</p>
+                </div>
+                <div class="card reveal">
+                    <span class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg></span>
+                    <h3>Ram Mandir Advocacy</h3>
+                    <p>Among the earliest and most persistent voices demanding the restoration of the Ram Janmabhoomi temple at Ayodhya — decades before the Supreme Court verdict.</p>
+                </div>
+                <div class="card reveal">
+                    <span class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></span>
+                    <h3>Unity of Saints</h3>
+                    <p>Brought together saints from all sampradayas — Vaishnava, Shaiva, Shakta — under one platform. His Dharma Sangha continues to hold annual sants-sammelans.</p>
+                </div>
+                <div class="card reveal">
+                    <span class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></span>
+                    <h3>Literary Legacy</h3>
+                    <p>Authored seminal works including <em>Marxwad aur Ramrajya</em>, <em>Vedo ka Rahasya</em>, and extensive commentaries on the Bhagavad Gita and Brahma Sutras.</p>
+                </div>
+                <div class="card reveal">
+                    <span class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></span>
+                    <h3>Political Dharma</h3>
+                    <p>Founded the Ram Rajya Parishad political party and strongly opposed policies that would undermine Hindu religious law. Organized massive satyagrahas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connection to Govardhan Math -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label reveal">Sacred Connection</span>
+                <h2 class="section-title reveal">Association with Govardhan Math</h2>
+            </div>
+            <div class="grid-2">
+                <div class="card reveal" style="background:var(--bg2);">
+                    <h3>Deep Fraternal Respect</h3>
+                    <p class="serif">Swami Karpatri Ji maintained deep respect and association with the Shankaracharyas of Govardhan Math, Puri. He considered the Govardhan Peetham a sacred seat of the Advaita Vedanta tradition and cooperated closely with the then Shankaracharyas on matters of Dharma, Vedic tradition, and national concerns.</p>
+                    <p class="serif" style="margin-top:14px;">On many occasions, he participated in the joint sants-sammelans convened by Govardhan Math and Kashi — particularly on issues of Gau Raksha and Ram Janmabhoomi.</p>
+                </div>
+                <div class="card reveal" style="background:var(--bg2);">
+                    <h3>Title "Dharma Samrat"</h3>
+                    <p class="serif">The title <em>Dharma Samrat</em> was formally conferred upon Swami Karpatri Ji by all four Shankaracharyas of the Amnaya Peethams — Sringeri, Dwaraka, Badrinath (Jyotirmath), and Govardhan Math, Puri — at a grand assembly of thousands of saints and scholars.</p>
+                    <p class="serif" style="margin-top:14px;">The conferral by the Govardhan Math Peethadhipati acknowledged Swami Karpatri Ji as the supreme defender of dharma in the modern era.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"><h3>Govardhan Math</h3><p>Shankaracharya Marg, Post, Bali Sahi<br>Puri, Odisha — 752001</p><p style="margin-top:12px;">contact@govardhanpeeth.org | +91 9437031716</p></div>
+                <div class="footer-col"><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="shankaracharya.html">Shankaracharya</a></li><li><a href="bharati-krishna.html">Bharati Krishna Ji</a></li><li><a href="dharma-samrat.html">Dharma Samrat</a></li></ul></div>
+                <div class="footer-col"><h4>Explore</h4><ul><li><a href="vedic-math.html">Vedic Math</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="publications.html">Publications</a></li><li><a href="gaushala.html">Gaushala</a></li></ul></div>
+                <div class="footer-col"><h4>Engage</h4><ul><li><a href="donate.html">Donate</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Govardhan Math, Puri.</p></div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

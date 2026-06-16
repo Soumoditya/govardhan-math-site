@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photo Gallery — Govardhan Math, Puri. Shankaracharya, Math Gate, Gaushala, Prakashan, and sacred events.">
+    <title>Gallery | Govardhan Math</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+</head>
+<body>
+    <nav id="main-nav">
+        <a href="index.html" class="logo"><img src="assets/logo.png" alt="Govardhan Math"><span class="logo-text">Govardhan Math</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="shankaracharya.html">Shankaracharya</a></li><li><a href="institutions.html">Institutions</a></li><li><a href="gaushala.html">Gaushala</a></li><li><a href="vedic-math.html">Vedic Math</a></li><li><a href="gallery.html" class="active">Gallery</a></li><li><a href="donate.html">Donate</a></li><li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-right"><button class="theme-toggle" onclick="toggleTheme()">☀️</button><div class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div></div>
+    </nav>
+
+    <div class="page-header">
+        <h1>Gallery</h1>
+        <p>Glimpses of the sacred Math, its traditions, and the Jagadguru</p>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-item featured reveal" onclick="openLightbox(this)">
+                    <img src="assets/adi_shankaracharya_statue.jpg" alt="Adi Shankaracharya statue at Kedarnath">
+                    <div class="overlay"><span>Adi Shankaracharya — Kedarnath, Himalayas</span></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox(this)">
+                    <img src="assets/math_gate.jpg" alt="Govardhan Math entrance gate">
+                    <div class="overlay"><span>श्री शंकराचार्य गोवर्धनमठ — पुरी</span></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox(this)">
+                    <img src="assets/swamiji_portrait.jpg" alt="Shankaracharya portrait">
+                    <div class="overlay"><span>145th Shankaracharya — Portrait</span></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox(this)">
+                    <img src="assets/swamiji_procession.jpg" alt="Sacred procession">
+                    <div class="overlay"><span>Sacred Procession</span></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox(this)">
+                    <img src="assets/swamiji_puja.jpg" alt="Temple puja">
+                    <div class="overlay"><span>Sacred Puja & Agni Ritual</span></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox(this)">
+                    <img src="assets/swamiji_worship.jpg" alt="Prayers at shrine">
+                    <div class="overlay"><span>Worship at the Sacred Shrine</span></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox(this)">
+                    <img src="assets/swamiji_writing.jpg" alt="Reviewing scriptures">
+                    <div class="overlay"><span>Scriptural Review</span></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox(this)">
+                    <img src="assets/swamiji_with_cow.jpg" alt="Shankaracharya with Gau Mata">
+                    <div class="overlay"><span>Go Seva — With Gau Mata</span></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox(this)">
+                    <img src="assets/isro_news.jpg" alt="ISRO Chandrayaan-2 newspaper">
+                    <div class="overlay"><span>Vedic Maths for Chandrayaan-2</span></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox(this)">
+                    <img src="assets/prakashan_exterior.png" alt="Swasti Prakashan exterior">
+                    <div class="overlay"><span>Swasti Prakashan Sansthan</span></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox(this)">
+                    <img src="assets/prakashan_interior.png" alt="Prakashan interior">
+                    <div class="overlay"><span>Inside the Book Store</span></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox(this)">
+                    <img src="assets/book_rack.png" alt="90+ books collection">
+                    <div class="overlay"><span>90+ Publications Collection</span></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox(this)">
+                    <img src="assets/guru_purnima.jpg" alt="Guru Purnima celebrations">
+                    <div class="overlay"><span>Guru Purnima Mahotsav</span></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox(this)">
+                    <img src="assets/speaking.jpg" alt="Discourse">
+                    <div class="overlay"><span>Addressing the Gathering</span></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox(this)">
+                    <img src="assets/swamiji_flags.jpg" alt="Jagadguru with Dhwaja flags">
+                    <div class="overlay"><span>With Sacred Dhwaja Flags</span></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox(this)">
+                    <img src="assets/swamiji_back.jpg" alt="Jagadguru blessing">
+                    <div class="overlay"><span>Ashirvad — Blessings</span></div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox(this)">
+                    <img src="assets/gurukulam_pranaam.jpg" alt="Gurukulam students pranaam">
+                    <div class="overlay"><span>Gurukulam Pranaam</span></div>
+                </div>
+                <div class="gallery-item featured reveal" onclick="openLightbox(this)">
+                    <img src="assets/cosmic_bharat.jpg" alt="Sanatan Dharma - Cosmic Bharat">
+                    <div class="overlay"><span>Cosmic Vision — Sanatan Dharma</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="" alt="Gallery Preview">
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"><h3>Govardhan Math</h3><p>Shankaracharya Marg, Puri — 752001</p></div>
+                <div class="footer-col"><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="shankaracharya.html">Shankaracharya</a></li></ul></div>
+                <div class="footer-col"><h4>Explore</h4><ul><li><a href="vedic-math.html">Vedic Math</a></li><li><a href="gaushala.html">Gaushala</a></li><li><a href="publications.html">Publications</a></li></ul></div>
+                <div class="footer-col"><h4>Engage</h4><ul><li><a href="donate.html">Donate</a></li><li><a href="contact.html">Contact</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Govardhan Math, Puri.</p></div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        function openLightbox(el){const img=el.querySelector('img');document.getElementById('lightbox-img').src=img.src;document.getElementById('lightbox').classList.add('active');document.body.style.overflow='hidden'}
+        function closeLightbox(){document.getElementById('lightbox').classList.remove('active');document.body.style.overflow=''}
+        document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox()});
+    </script>
+</body>
+</html>

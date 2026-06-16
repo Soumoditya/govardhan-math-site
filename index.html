@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Govardhan Math, Puri — The first Amnaya Peetham established by Bhagavatpada Adi Shankaracharya in 486 BC. Eastern Seat of Rigveda and Advaita Vedanta.">
+    <title>Govardhan Math — Puri Peetham | The Seat of Rigveda</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+</head>
+<body>
+    <nav id="main-nav">
+        <a href="index.html" class="logo"><img src="assets/logo.png" alt="Govardhan Math"><span class="logo-text">Govardhan Math</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="shankaracharya.html">Shankaracharya</a></li>
+            <li><a href="bharati-krishna.html">Bharati Krishna Ji</a></li>
+            <li><a href="dharma-samrat.html">Dharma Samrat</a></li>
+            <li><a href="institutions.html">Institutions</a></li>
+            <li><a href="gaushala.html">Gaushala</a></li>
+            <li><a href="vedic-math.html">Vedic Math</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">☀️</button>
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <span class="hero-badge reveal">☸ Purushottam Kshetra · Puri · Odisha</span>
+            <h1 class="reveal">Govardhan Math</h1>
+            <p class="hero-desc reveal">The first of four Amnaya Peethams, established by Adi Shankaracharya in 486 BC at Jagannath Puri — the Eastern Seat of Rigveda, illuminating the path of Advaita Vedanta and Sanatana Dharma.</p>
+            <div class="hero-cta reveal">
+                <a href="about.html" class="btn-gold">Explore Heritage →</a>
+                <a href="shankaracharya.html" class="btn-outline">Guruparampara</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Audio Message - Autoplay -->
+    <section class="audio-hero-section">
+        <div class="container" style="max-width:700px;">
+            <div class="audio-player reveal" id="hero-audio">
+                <span class="audio-label">🎙️ संदेश सुनें</span>
+                <audio id="autoAudio" controls preload="auto">
+                    <source src="assets/audio_message.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mahavakya Stats -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label reveal">The Mahavakya</span>
+                <h2 class="section-title reveal" style="font-size:clamp(2rem,5vw,3.2rem)">प्रज्ञानं ब्रह्म</h2>
+                <p class="section-subtitle reveal">"Consciousness is Brahman" — Aitareya Upanishad, Rigveda</p>
+            </div>
+            <div class="grid-4">
+                <div class="stat-item reveal"><div class="stat-number">145</div><div class="stat-label">Shankaracharyas</div></div>
+                <div class="stat-item reveal"><div class="stat-number">2500</div><div class="stat-label">Years of Legacy</div></div>
+                <div class="stat-item reveal"><div class="stat-number">4</div><div class="stat-label">Amnaya Peethams</div></div>
+                <div class="stat-item reveal"><div class="stat-number">5</div><div class="stat-label">Ashrams Across India</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Math Gate Full Width -->
+    <section style="background:var(--bg2);padding:48px 0;">
+        <div class="container">
+            <div class="img-frame reveal" style="height:520px;">
+                <img src="assets/math_gate.jpg" alt="श्री शंकराचार्य गोवर्धनमठ — Main gate of Govardhan Math, Puri Peetham" style="object-position:center 20%;">
+                <div class="img-caption">श्री शंकराचार्य गोवर्धनमठ — पुरी पीठ · The Sacred Entrance</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section with Adi Shankaracharya -->
+    <section>
+        <div class="container">
+            <div class="grid-2">
+                <div class="img-frame reveal-left" style="height:520px;">
+                    <img src="assets/adi_shankaracharya_statue.jpg" alt="Adi Shankaracharya statue at Kedarnath with Himalayan mountains">
+                    <div class="img-caption">Adi Shankaracharya — The Founder, Kedarnath</div>
+                </div>
+                <div class="reveal-right">
+                    <span class="section-label">Est. 486 BC</span>
+                    <h2 style="margin:14px 0 20px;">The Eastern Seat of Vedic Wisdom</h2>
+                    <p class="serif">Around 507 BC, Acharya Adi Shankara — a very embodiment of Lord Shiva — descended upon this sacred land and established the four Amnaya Peethams to protect Sanatana Dharma for eternity.</p>
+                    <p class="serif" style="margin-top:14px;">Govardhan Math at Jagannath Puri presides over the eastern direction, associated with the Rigveda, the Mahavakya "Prajñānam Brahma", and the presiding deity Purushottam (Lord Jagannath). Padmapadacharya was appointed the first Shankaracharya.</p>
+                    <a href="about.html" class="btn-gold" style="margin-top:24px;">Read Full History →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Shankaracharya -->
+    <section style="background:var(--bg2);">
+        <div class="container">
+            <div class="grid-2">
+                <div class="reveal-left">
+                    <span class="section-label">145th Shankaracharya</span>
+                    <h2 style="margin:14px 0 20px;">Swami Nischalananda Saraswati</h2>
+                    <p class="serif">Born 30th June 1943 in Haripur Bakshi Tol, Madhubani, Bihar. His father Pandit Sri Lalvamshi Jha was a court vidwan of the Darbhanga Kingdom. Coronated as the 145th Shankaracharya on 9th February 1992.</p>
+                    <p class="serif" style="margin-top:14px;">He has delivered discourses at IIT Kanpur, IIM Kolkata, IIM Ahmedabad, ISRO, DRDO, BARC, AIIMS, and the Supreme Court. He advised ISRO scientists for the Chandrayaan-2 Moon Mission using Vedic Mathematics.</p>
+                    <div style="display:flex;gap:10px;margin-top:24px;flex-wrap:wrap;">
+                        <a href="shankaracharya.html" class="btn-gold">View Full Lineage →</a>
+                        <a href="vedic-math.html" class="btn-outline">ISRO & Vedic Math</a>
+                    </div>
+                </div>
+                <div class="img-frame reveal-right" style="height:520px;">
+                    <img src="assets/swamiji_portrait.jpg" alt="Jagadguru Shankaracharya Swami Nischalananda Saraswati Ji Maharaj — Official Portrait">
+                    <div class="img-caption">Jagadguru Shankaracharya Swami Nischalananda Saraswati Ji Maharaj</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Swamiji Action Grid — Using ALL new images -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label reveal">In Service of Dharma</span>
+                <h2 class="section-title reveal">The Jagadguru at Work</h2>
+            </div>
+            <div class="grid-4">
+                <div class="img-frame reveal" style="height:280px;">
+                    <img src="assets/swamiji_flags.jpg" alt="Jagadguru Shankaracharya with Dhwaja flags" style="object-position:center top;">
+                    <div class="img-caption">With Sacred Dhwaja</div>
+                </div>
+                <div class="img-frame reveal" style="height:280px;">
+                    <img src="assets/swamiji_back.jpg" alt="Jagadguru blessing from behind with raised hand" style="object-position:center top;">
+                    <div class="img-caption">Ashirvad</div>
+                </div>
+                <div class="img-frame reveal" style="height:280px;">
+                    <img src="assets/gurukulam_pranaam.jpg" alt="Ved Gurukulam students offering pranaam to Jagadguru">
+                    <div class="img-caption">Gurukulam Pranaam</div>
+                </div>
+                <div class="img-frame reveal" style="height:280px;">
+                    <img src="assets/cosmic_bharat.jpg" alt="Cosmic vision — Bharat from space with sacred flag">
+                    <div class="img-caption">Sanatan Vision</div>
+                </div>
+            </div>
+            <!-- Second row -->
+            <div class="grid-4" style="margin-top:20px;">
+                <div class="img-frame reveal" style="height:260px;">
+                    <img src="assets/swamiji_procession.jpg" alt="Sacred ceremonial procession">
+                    <div class="img-caption">Sacred Procession</div>
+                </div>
+                <div class="img-frame reveal" style="height:260px;">
+                    <img src="assets/swamiji_puja.jpg" alt="Temple puja with sacred fire">
+                    <div class="img-caption">Temple Puja</div>
+                </div>
+                <div class="img-frame reveal" style="height:260px;">
+                    <img src="assets/swamiji_worship.jpg" alt="Offering prayers at shrine">
+                    <div class="img-caption">Prayers at Shrine</div>
+                </div>
+                <div class="img-frame reveal" style="height:260px;">
+                    <img src="assets/swamiji_with_cow.jpg" alt="Shankaracharya with Gau Mata at Govardhan Gaushala">
+                    <div class="img-caption">Gau Seva</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real Book Catalog (covers from official WordPress catalog) -->
+    <section style="background:var(--bg2);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label reveal">Swasti Prakashan Sansthan</span>
+                <h2 class="section-title reveal">Sacred Publications</h2>
+                <p class="section-subtitle reveal">130+ books by Jagadguru Shankaracharya Nishchalananda Saraswatiji — Browse the WhatsApp Catalog</p>
+            </div>
+            <div class="book-catalog-strip reveal">
+                <div class="book-catalog-scroll infinite-scroll" id="bookCarousel">
+                    <a href="https://www.whatsapp.com/catalog/917656944282/?app_absent=0" target="_blank" class="catalog-book-item">
+                        <img src="assets/book_swastik_ganit.jpg" alt="Swastik Ganit" onerror="this.src='assets/books.jpg'">
+                    </a>
+                    <a href="https://www.whatsapp.com/catalog/917656944282/?app_absent=0" target="_blank" class="catalog-book-item">
+                        <img src="assets/book_sanatan_dharma.jpg" alt="Sanatan Dharma" onerror="this.src='assets/books.jpg'">
+                    </a>
+                    <a href="https://www.whatsapp.com/catalog/917656944282/?app_absent=0" target="_blank" class="catalog-book-item">
+                        <img src="assets/book_nature_numbers.jpg" alt="Nature of Numbers" onerror="this.src='assets/books.jpg'">
+                    </a>
+                    <a href="https://www.whatsapp.com/catalog/917656944282/?app_absent=0" target="_blank" class="catalog-book-item">
+                        <img src="assets/book_ganita_chintamani.jpg" alt="Ganita Chintamani" onerror="this.src='assets/books.jpg'">
+                    </a>
+                    <a href="https://www.whatsapp.com/catalog/917656944282/?app_absent=0" target="_blank" class="catalog-book-item">
+                        <img src="assets/book_true_revolution.jpg" alt="The True Revolution" onerror="this.src='assets/books.jpg'">
+                    </a>
+                    <a href="https://www.whatsapp.com/catalog/917656944282/?app_absent=0" target="_blank" class="catalog-book-item">
+                        <img src="assets/book_udbodhan.jpg" alt="Udbodhan" onerror="this.src='assets/books.jpg'">
+                    </a>
+                    <a href="https://www.whatsapp.com/catalog/917656944282/?app_absent=0" target="_blank" class="catalog-book-item">
+                        <img src="assets/book_a22.jpg" alt="Publication" onerror="this.src='assets/books.jpg'">
+                    </a>
+                    <a href="https://www.whatsapp.com/catalog/917656944282/?app_absent=0" target="_blank" class="catalog-book-item">
+                        <img src="assets/book_a20.jpg" alt="Publication" onerror="this.src='assets/books.jpg'">
+                    </a>
+                </div>
+                <div class="carousel-nav" style="margin-top:16px;">
+                    <button onclick="scrollBooks(-1)" class="carousel-btn">‹</button>
+                    <button onclick="scrollBooks(1)" class="carousel-btn">›</button>
+                </div>
+            </div>
+            <div style="text-align:center;margin-top:24px;">
+                <a href="https://www.whatsapp.com/catalog/917656944282/?app_absent=0" target="_blank" class="btn-gold">Check Our WhatsApp Catalog →</a>
+                <a href="https://wa.me/c/917656944282" target="_blank" class="btn-outline" style="margin-left:12px;">Order on WhatsApp →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aditya Vahini + Endeavors -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label reveal">Sacred Endeavors</span>
+                <h2 class="section-title reveal">Pillars of Dharma</h2>
+                <p class="section-subtitle reveal">Organizations and initiatives under the aegis of Peeth Parishad</p>
+            </div>
+            <div class="grid-3">
+                <div class="card reveal"><span class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg></span><h3>Ved Gurukulam</h3><p>Traditional Vedic school for oral transmission of Rigveda. Young Brahmacharis study Sanskrit, scriptures, rituals, Vyakarana, Jyotish, and Nyaya under the direct guidance of learned Acharyas.</p><br><a href="institutions.html">Learn More →</a></div>
+                <div class="card reveal"><span class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c6.23-.05 7.87-5.57 7.5-10-.36-4.34-3.95-9.96-7.5-10-3.55.04-7.14 5.66-7.5 10-.37 4.43 1.27 9.95 7.5 10z"/><path d="M12 22V2"/></svg></span><h3>Govardhan Gaushala</h3><p>Dedicated to protection and care of indigenous cows. A model for sustainable agriculture, Panchagavya medicine, and Go Seva under the Math's direct management.</p><br><a href="gaushala.html">Learn More →</a></div>
+                <div class="card reveal"><span class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16,3 21,3 21,8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21,16 21,21 16,21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg></span><h3>Vedic Mathematics</h3><p>Legacy of 143rd Shankaracharya Bharati Krishna Teerthaji’s 16 Sutras. Current Shankaracharya authored 11 books on Vedic math and advised ISRO on calculations for Chandrayaan-2.</p><br><a href="vedic-math.html">Explore →</a></div>
+                <div class="card reveal" style="border:1px solid var(--gold);">
+                    <span class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></span>
+                    <h3>Aditya Vahini</h3>
+                    <p>Youth organization for spiritual awakening, cultural preservation, cow protection, environment and national service. Operating under the guidance of Govardhan Math.</p>
+                    <br><a href="https://adityavahini.org/" target="_blank" style="color:var(--gold);font-weight:600;">Visit adityavahini.org →</a>
+                </div>
+                <div class="card reveal"><span class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></span><h3>Anand Vahini</h3><p>Women’s wing empowering women through spiritual education, community service, and preservation of Vedic cultural practices under the Math’s guidance.</p><br><a href="institutions.html">Learn More →</a></div>
+                <div class="card reveal"><span class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg></span><h3>Swasti Prakashan</h3><p>Official publication house with 130+ books on Vedanta, Vedic Mathematics, Sanskrit literature, and spiritual discourses. Browse the WhatsApp catalog for all titles.</p><br><a href="publications.html">Browse Books →</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ISRO -->
+    <section style="background:var(--bg2);">
+        <div class="container">
+            <div class="grid-2">
+                <div class="reveal-left">
+                    <span class="section-label">In the News</span>
+                    <h2 style="margin:14px 0 20px;font-size:clamp(1.3rem,2.5vw,1.8rem);">Vedic Maths for Chandrayaan-2</h2>
+                    <p>Shankaracharya was invited by ISRO to its Ahmedabad centre on November 25, 2016, to impart Vedic Mathematics formulas for space distance calculations. ISRO Chairman Dr. Kiran Kumar along with 1,000+ space scientists and scholars attended.</p>
+                    <a href="vedic-math.html" class="btn-outline" style="margin-top:20px;">Read Full Story →</a>
+                </div>
+                <div class="img-frame reveal-right" style="height:360px;">
+                    <img src="assets/isro_news.jpg" alt="Newspaper: Puri Seer imparted Vedic Maths formula to ISRO for Chandrayaan-2">
+                    <div class="img-caption">Press coverage — ISRO Chandrayaan-2</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- YouTube Shorts + Facebook Feed -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label reveal">Stay Connected</span>
+                <h2 class="section-title reveal">Watch &amp; Follow</h2>
+                <p class="section-subtitle reveal">Latest from Govardhan Math — YouTube Shorts &amp; Facebook Live</p>
+            </div>
+            <div class="social-feeds-scroll" id="socialFeedScroll">
+                <!-- YouTube Shorts - Latest Videos -->
+                <div class="social-feed-card">
+                    <div class="feed-badge yt-badge">YouTube Shorts</div>
+                    <iframe src="https://www.youtube.com/embed/videoseries?list=UUSQgYH0jzHqHFWLKvzcgCmWw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" style="width:100%;height:400px;border:0;border-radius:12px;"></iframe>
+                    <a href="https://www.youtube.com/@govardhanmath/shorts" target="_blank" class="feed-link">Watch YouTube Shorts →</a>
+                </div>
+                <!-- Facebook -->
+                <div class="social-feed-card">
+                    <div class="feed-badge fb-badge">Facebook</div>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgovardhanpeeth&amp;tabs=timeline&amp;width=340&amp;height=400&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true" style="width:100%;height:400px;border:0;border-radius:12px;overflow:hidden;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" loading="lazy"></iframe>
+                    <a href="https://www.facebook.com/govardhanpeeth/" target="_blank" class="feed-link">Visit Facebook Page →</a>
+                </div>
+            </div>
+            <div class="carousel-nav" style="margin-top:16px;">
+                <button onclick="scrollFeeds(-1)" class="carousel-btn">‹</button>
+                <button onclick="scrollFeeds(1)" class="carousel-btn">›</button>
+            </div>
+            <div class="social-links reveal" style="justify-content:center;margin-top:24px;gap:12px;flex-wrap:wrap;">
+                <a href="https://www.youtube.com/channel/UCQgYH0jzHqHFWLKvzcgCmWw" target="_blank" class="btn-outline" style="font-size:.82rem;padding:8px 16px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-3px;margin-right:5px;"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>YouTube Channel</a>
+                <a href="https://www.instagram.com/govardhanmath" target="_blank" class="btn-outline" style="font-size:.82rem;padding:8px 16px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-3px;margin-right:5px;"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>@govardhanmath</a>
+                <a href="https://x.com/govardhanmath" target="_blank" class="btn-outline" style="font-size:.82rem;padding:8px 16px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-3px;margin-right:5px;"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>@govardhanmath on X</a>
+                <a href="https://www.facebook.com/govardhanpeeth/" target="_blank" class="btn-outline" style="font-size:.82rem;padding:8px 16px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-3px;margin-right:5px;"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>Facebook Page</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map — OpenStreetMap with precise Govardhan Math marker -->
+    <section style="background:var(--bg2);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label reveal">Visit Us</span>
+                <h2 class="section-title reveal">Govardhan Math, Puri</h2>
+                <p class="section-subtitle reveal">Shankaracharya Marg, Post, Bali Sahi, Puri, Odisha 752001</p>
+            </div>
+            <div class="map-wrapper reveal">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d934.7!2d85.83165!3d19.79835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19c4a5510f8ed9%3A0xf62dc74e32f41c6e!2sGovardhan%20Peeth!5e0!3m2!1sen!2sin!4v1718000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Govardhan Math on Google Maps"></iframe>
+            </div>
+            <div style="text-align:center;margin-top:12px;">
+                <a href="https://maps.app.goo.gl/y6DGwqZtbtUutbhN8" target="_blank" class="btn-outline" style="font-size:.85rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-2px;margin-right:4px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Open in Google Maps →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate CTA -->
+    <section>
+        <div class="container" style="text-align:center;">
+            <div class="section-header">
+                <span class="section-label reveal">Seva</span>
+                <h2 class="section-title reveal">Support the Dharma</h2>
+                <p class="section-subtitle reveal">Your contribution sustains 2500+ years of living tradition. All donations exempt under Section 80G.</p>
+            </div>
+            <div class="reveal" style="margin-bottom:32px;">
+                <a href="donate.html" class="btn-gold">Donate Now →</a>
+                <a href="https://pages.razorpay.com/GovardhanPeeth" target="_blank" class="btn-outline" style="margin-left:12px;">Razorpay →</a>
+            </div>
+            <div class="social-links reveal" style="justify-content:center;">
+                <a href="https://www.facebook.com/govardhanpeeth/" target="_blank" class="social-link" title="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                <a href="https://x.com/govardhanmath" target="_blank" class="social-link" title="X (Twitter)"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                <a href="https://www.youtube.com/channel/UCQgYH0jzHqHFWLKvzcgCmWw" target="_blank" class="social-link" title="YouTube"><svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+                <a href="https://www.instagram.com/govardhanmath" target="_blank" class="social-link" title="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Govardhan Math</h3>
+                    <p>Shankaracharya Marg, Swargadwara Road<br>Puri, Odisha, India — 752001</p>
+                    <p style="margin-top:12px;">Email: contact@govardhanpeeth.org<br>Phone: +91 9437031716</p>
+                    <div class="social-links" style="margin-top:16px;">
+                        <a href="https://www.facebook.com/govardhanpeeth/" target="_blank" class="social-link" title="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                        <a href="https://x.com/govardhanmath" target="_blank" class="social-link" title="X"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                        <a href="https://www.youtube.com/channel/UCQgYH0jzHqHFWLKvzcgCmWw" target="_blank" class="social-link" title="YouTube"><svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+                        <a href="https://www.instagram.com/govardhanmath" target="_blank" class="social-link" title="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-col"><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="shankaracharya.html">Shankaracharya</a></li><li><a href="institutions.html">Institutions</a></li><li><a href="gaushala.html">Gaushala</a></li></ul></div>
+                <div class="footer-col"><h4>Explore</h4><ul><li><a href="vedic-math.html">Vedic Mathematics</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="publications.html">Publications</a></li><li><a href="faq.html">FAQ & Map</a></li></ul></div>
+                <div class="footer-col"><h4>Engage</h4><ul><li><a href="donate.html">Donate</a></li><li><a href="contact.html">Contact</a></li><li><a href="https://govardhanpeeth.org" target="_blank">Official Site</a></li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Govardhan Math, Puri. All Rights Reserved.</p></div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Govardhan Gaushala — Cow protection, Go Seva, Panchagavya Ayurveda, and sustainable farming at Govardhan Math, Puri.">
+    <title>Gaushala | Govardhan Math — Go Seva</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+</head>
+<body>
+    <nav id="main-nav">
+        <a href="index.html" class="logo"><img src="assets/logo.png" alt="Govardhan Math"><span class="logo-text">Govardhan Math</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="shankaracharya.html">Shankaracharya</a></li><li><a href="institutions.html">Institutions</a></li><li><a href="gaushala.html" class="active">Gaushala</a></li><li><a href="vedic-math.html">Vedic Math</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="donate.html">Donate</a></li><li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-right"><button class="theme-toggle" onclick="toggleTheme()">☀️</button><div class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div></div>
+    </nav>
+
+    <div class="page-header">
+        <h1>Govardhan Gaushala</h1>
+        <p>Go Seva — The protection and care of Gau Mata as prescribed in Vedic tradition</p>
+    </div>
+
+    <!-- Hero image -->
+    <section style="padding:48px 0;">
+        <div class="container">
+            <div class="grid-2">
+                <div class="img-frame reveal-left" style="height:400px;">
+                    <img src="assets/swamiji_with_cow.jpg" alt="Shankaracharya Swami Nischalananda Saraswati with Gau Mata at Govardhan Gaushala">
+                    <div class="img-caption">Jagadguru Shankaracharya with Gau Mata — Go Seva in action</div>
+                </div>
+                <div class="reveal-right">
+                    <span class="section-label">Go Seva</span>
+                    <h2 style="margin:14px 0 20px;">Why Do We Need Goshala?</h2>
+                    <p class="serif">In Vedic scriptures, the cow holds a position of utmost reverence. She is considered the abode of 33 crore deities. The protection of cows (Go Raksha) is one of the primary dharmic duties prescribed in Hindu scriptures.</p>
+                    <p class="serif" style="margin-top:14px;">The Shankaracharya himself was imprisoned in Tihar Jail for 52 days in 1966 for advocating cow protection as part of Dharma Samrat Karpatriji Maharaj's agitation. Go Seva remains central to the Math's mission.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What does Gaushala do -->
+    <section style="background:var(--bg2);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label reveal">Services</span>
+                <h2 class="section-title reveal">What Does Goshala Do?</h2>
+                <p class="section-subtitle reveal">Shree Govardhan Goshala operates under the direct guidance of the Shankaracharya</p>
+            </div>
+            <div class="grid-3">
+                <div class="card reveal">
+                    <span class="card-icon">🐄</span><h3>Rescue & Shelter</h3>
+                    <p>Rescue of abandoned, sick, and old cows. Providing permanent shelter, nutritious food, clean water, and veterinary care to all Gauvansh.</p>
+                </div>
+                <div class="card reveal">
+                    <span class="card-icon">🌿</span><h3>Panchagavya</h3>
+                    <p>Production of Panchagavya — the five sacred products of the cow: milk, curd, ghee, cow urine, and dung. Used in Ayurvedic medicine, agriculture, and Vedic rituals.</p>
+                </div>
+                <div class="card reveal">
+                    <span class="card-icon">🌾</span><h3>Organic Farming</h3>
+                    <p>Promotion of cow-based organic farming. Cow dung manure, Jeevamrit, and natural pest control methods for sustainable agriculture.</p>
+                </div>
+                <div class="card reveal">
+                    <span class="card-icon">📖</span><h3>Vedic Education</h3>
+                    <p>Educating the community about the spiritual and economic significance of cows in Indian culture and Vedic tradition.</p>
+                </div>
+                <div class="card reveal">
+                    <span class="card-icon">🧪</span><h3>Research</h3>
+                    <p>Research on indigenous cow breeds, their medicinal properties, and the production of cow-based products for health and environmental applications.</p>
+                </div>
+                <div class="card reveal">
+                    <span class="card-icon">🙏</span><h3>Give Gauvansh a Life</h3>
+                    <p>You can contribute to cow care by sponsoring daily feed, medical treatment, or adopting a cow. Every contribution helps protect our sacred Gauvansh.</p>
+                    <br><a href="donate.html">Donate for Gau Seva →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Donate CTA -->
+    <section style="padding:64px 0;text-align:center;">
+        <div class="container" style="max-width:650px;">
+            <span class="section-label reveal">Support</span>
+            <h2 class="section-title reveal" style="margin-top:14px;">Help Us Protect Gauvansh</h2>
+            <p class="serif reveal" style="margin:20px auto;">Your generous donation helps us feed, shelter, and provide medical care to cows at Govardhan Gaushala. Every contribution counts in our mission of Go Seva.</p>
+            <a href="donate.html" class="btn-gold reveal" style="margin-top:16px;">🙏 Donate for Gau Seva</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"><h3>Govardhan Math</h3><p>Shankaracharya Marg, Puri, Odisha — 752001</p><p style="margin-top:12px;">contact@govardhanpeeth.org | +91 9437031716</p></div>
+                <div class="footer-col"><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="shankaracharya.html">Shankaracharya</a></li></ul></div>
+                <div class="footer-col"><h4>Explore</h4><ul><li><a href="vedic-math.html">Vedic Math</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="publications.html">Publications</a></li></ul></div>
+                <div class="footer-col"><h4>Engage</h4><ul><li><a href="donate.html">Donate</a></li><li><a href="contact.html">Contact</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Govardhan Math, Puri.</p></div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frequently Asked Questions about Govardhan Math, Puri — Visiting hours, how to reach, dress code, and more.">
+    <title>FAQ & Visitor Info | Govardhan Math</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon.png">
+    <style>
+        .faq-item { border: 1px solid var(--glass-border); border-radius: var(--radius); margin-bottom: 12px; overflow: hidden; transition: border-color 0.3s; }
+        .faq-item:hover { border-color: var(--glass-border-hover); }
+        .faq-q { padding: 20px 24px; background: var(--bg-card); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+        .faq-q h4 { font-family: 'Inter', sans-serif; font-size: 0.95rem; font-weight: 500; color: var(--text-primary); margin: 0; }
+        .faq-q .icon { color: var(--gold-primary); font-size: 1.2rem; transition: transform 0.3s; flex-shrink: 0; }
+        .faq-item.open .faq-q .icon { transform: rotate(45deg); }
+        .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.4s ease; }
+        .faq-item.open .faq-a { max-height: 400px; }
+        .faq-a-inner { padding: 0 24px 20px; color: var(--text-secondary); font-size: 0.92rem; line-height: 1.7; }
+        /* Map embed */
+        .map-wrapper { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--glass-border); height: 400px; }
+        .map-wrapper iframe { width: 100%; height: 100%; border: 0; filter: grayscale(0.6) contrast(1.1); }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+</head>
+<body>
+    <nav id="main-nav">
+        <a href="index.html" class="logo"><img src="assets/logo.png" alt="Govardhan Math"><span class="logo-text">Govardhan Math</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="shankaracharya.html">Shankaracharya</a></li><li><a href="institutions.html">Institutions</a></li><li><a href="gaushala.html">Gaushala</a></li><li><a href="vedic-math.html">Vedic Math</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="donate.html">Donate</a></li><li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-right"><button class="theme-toggle" onclick="toggleTheme()">??</button><div class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div></div>
+    </nav>
+
+    <div class="page-header">
+        <h1>FAQ & Visitor Guide</h1>
+        <p>Everything you need to know before visiting Govardhan Math, Puri</p>
+    </div>
+
+    <!-- Map -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label reveal">Location</span>
+                <h2 class="section-title reveal">Find Us on the Map</h2>
+                <p class="section-subtitle reveal">Govardhan Math is located on Swargadwara Road, near the Jagannath Temple, Puri</p>
+            </div>
+            <div class="map-wrapper reveal">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1874.5!2d85.83055!3d19.79828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19c4a5510f8ed9%3A0xf62dc74e32f41c6e!2sGovardhan%20Math%2C%20Puri!5e0!3m2!1sen!2sin!4v1718000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Govardhan Math on Google Maps" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Govardhan Math Location on Google Maps"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section style="background:var(--bg-primary);">
+        <div class="container" style="max-width:800px;">
+            <div class="section-header">
+                <span class="section-label reveal">Information</span>
+                <h2 class="section-title reveal">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-item reveal">
+                <div class="faq-q" onclick="toggleFaq(this)"><h4>What is Govardhan Math?</h4><span class="icon">+</span></div>
+                <div class="faq-a"><div class="faq-a-inner">Govardhan Math (also spelled Govardhana Matha) is one of the four cardinal Amnaya Peethams established by Adi Shankaracharya. It is the Poorvamnaya (Eastern) seat, located in Puri, Odisha. It is associated with the Rigveda, the Mahavakya "Prajñānam Brahma", and has Lord Jagannath as the presiding deity.</div></div>
+            </div>
+            <div class="faq-item reveal">
+                <div class="faq-q" onclick="toggleFaq(this)"><h4>Who is the current Shankaracharya?</h4><span class="icon">+</span></div>
+                <div class="faq-a"><div class="faq-a-inner">The current and 145th Shankaracharya of Govardhan Math is <strong>Jagadguru Shankaracharya Swami Nischalananda Saraswati Ji Maharaj</strong>. He was born on 30th June 1943 in Darbhanga, Bihar, and was coronated on 9th February 1992.</div></div>
+            </div>
+            <div class="faq-item reveal">
+                <div class="faq-q" onclick="toggleFaq(this)"><h4>Can visitors visit Govardhan Math?</h4><span class="icon">+</span></div>
+                <div class="faq-a"><div class="faq-a-inner">Yes, Govardhan Math is open to visitors. Devotees can visit during regular darshan hours. The Math is located on Swargadwara Road, Puri, near the Sri Jagannath Temple. Visitors should dress modestly and follow the decorum of a sacred monastery. Photography restrictions may apply in certain areas.</div></div>
+            </div>
+            <div class="faq-item reveal">
+                <div class="faq-q" onclick="toggleFaq(this)"><h4>How to reach Govardhan Math, Puri?</h4><span class="icon">+</span></div>
+                <div class="faq-a"><div class="faq-a-inner"><strong>By Air:</strong> Nearest airport is Biju Patnaik International Airport, Bhubaneswar (~60 km).<br><strong>By Rail:</strong> Puri Railway Station is well-connected to major cities. The Math is ~2 km from the station.<br><strong>By Road:</strong> Puri is connected via NH-16 and NH-316. The Math is on Swargadwara Road, Shankaracharya Marg.</div></div>
+            </div>
+            <div class="faq-item reveal">
+                <div class="faq-q" onclick="toggleFaq(this)"><h4>What are the four Amnaya Peethams?</h4><span class="icon">+</span></div>
+                <div class="faq-a"><div class="faq-a-inner"><strong>Poorvamnaya (East):</strong> Govardhan Math, Puri — Rigveda<br><strong>Dakshinamnaya (South):</strong> Sringeri Sharada Peetham — Yajurveda<br><strong>Pashchimamnaya (West):</strong> Dwaraka Sharada Peetham — Samaveda<br><strong>Uttaramnaya (North):</strong> Jyotirmath, Badrinath — Atharvaveda</div></div>
+            </div>
+            <div class="faq-item reveal">
+                <div class="faq-q" onclick="toggleFaq(this)"><h4>What is the Mahavakya of Govardhan Math?</h4><span class="icon">+</span></div>
+                <div class="faq-a"><div class="faq-a-inner">"<strong>प्रज्ञानं ब्रह्म</strong>" (Prajñānam Brahma) — "Consciousness is Brahman." This is from the Aitareya Upanishad of the Rigveda.</div></div>
+            </div>
+            <div class="faq-item reveal">
+                <div class="faq-q" onclick="toggleFaq(this)"><h4>How can I donate to Govardhan Math?</h4><span class="icon">+</span></div>
+                <div class="faq-a"><div class="faq-a-inner">You can donate via UPI (govardhanmath@allbank), bank transfer (Indian Bank, Bank of Baroda, Indian Overseas Bank), or through Razorpay at <a href="https://pages.razorpay.com/GovardhanPeeth" target="_blank" style="color:var(--gold-primary);">pages.razorpay.com/GovardhanPeeth</a>. All donations are tax exempt under Section 80G. Visit our <a href="donate.html" style="color:var(--gold-primary);">Donate page</a> for full details.</div></div>
+            </div>
+            <div class="faq-item reveal">
+                <div class="faq-q" onclick="toggleFaq(this)"><h4>What is the connection between Govardhan Math and Vedic Mathematics?</h4><span class="icon">+</span></div>
+                <div class="faq-a"><div class="faq-a-inner">The 143rd Shankaracharya, <strong>Bharati Krishna Teerthaji</strong> (1884–1960), is world-famous for rediscovering 16 Vedic Sutras for rapid mathematical calculations. His book "Vedic Mathematics" (1965) is a global bestseller. The current Shankaracharya has written 11 books on Vedic Mathematics and was invited by ISRO to share Vedic formulas for Chandrayaan-2.</div></div>
+            </div>
+            <div class="faq-item reveal">
+                <div class="faq-q" onclick="toggleFaq(this)"><h4>What are the Dasanami titles of Govardhan Math?</h4><span class="icon">+</span></div>
+                <div class="faq-a"><div class="faq-a-inner">Sannyasis of Govardhan Math bear the Dasanami titles <strong>'Vana'</strong> and <strong>'Aranya'</strong>. The Brahmachari (pre-initiation) title is <strong>'Prakash'</strong>.</div></div>
+            </div>
+            <div class="faq-item reveal">
+                <div class="faq-q" onclick="toggleFaq(this)"><h4>How many Shankaracharyas has Govardhan Math had?</h4><span class="icon">+</span></div>
+                <div class="faq-a"><div class="faq-a-inner">Govardhan Math has had <strong>145 Shankaracharyas</strong> in an unbroken lineage spanning over 2,500 years, from Padmapadacharya (484 BCE) to the current Shankaracharya Swami Nischalananda Saraswati (1992–present). View the complete <a href="shankaracharya.html" style="color:var(--gold-primary);">Guruparampara</a>.</div></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"><h3>Govardhan Math</h3><p>Shankaracharya Marg, Puri, Odisha — 752001</p><p style="margin-top:12px;">contact@govardhanpeeth.org | +91 9437031716</p></div>
+                <div class="footer-col"><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="shankaracharya.html">Shankaracharya</a></li></ul></div>
+                <div class="footer-col"><h4>Engage</h4><ul><li><a href="donate.html">Donate</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li><li><a href="publications.html">Publications</a></li></ul></div>
+                <div class="footer-col"><h4>Connect</h4><ul><li><a href="https://x.com/govardhanmath" target="_blank">X</a></li><li><a href="https://www.youtube.com/channel/UCQgYH0jzHqHFWLKvzcgCmWw" target="_blank">YouTube</a></li><li><a href="https://www.instagram.com/govardhanmath" target="_blank">Instagram</a></li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Govardhan Math, Puri.</p></div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        function toggleFaq(el) {
+            const item = el.parentElement;
+            document.querySelectorAll('.faq-item').forEach(i => { if(i !== item) i.classList.remove('open'); });
+            item.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
