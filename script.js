@@ -146,10 +146,14 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // ── Book Carousel Scroll ──
+    // ── Book Carousel Scroll (for nav buttons) ──
     window.scrollBooks = function(dir) {
         const carousel = document.getElementById('bookCarousel');
-        if (carousel) carousel.scrollBy({ left: dir * 240, behavior: 'smooth' });
+        if (carousel) {
+            carousel.classList.add('dragging');
+            carousel.scrollBy({ left: dir * 240, behavior: 'smooth' });
+            setTimeout(() => carousel.classList.remove('dragging'), 600);
+        }
     };
 
     // ── Social Feeds Scroll ──
@@ -158,15 +162,54 @@ document.addEventListener("DOMContentLoaded", () => {
         if (feed) feed.scrollBy({ left: dir * 360, behavior: 'smooth' });
     };
 
-    // ── Infinite Book Scroll (clone items for seamless loop) ──
+    // ── Infinite Book Scroll (clone items for seamless loop + drag/touch) ──
     document.querySelectorAll('.infinite-scroll').forEach(carousel => {
-        const items = carousel.querySelectorAll('.catalog-book-item');
-        if (items.length) {
+        const items = Array.from(carousel.querySelectorAll('.catalog-book-item'));
+        if (!items.length) return;
+
+        // Clone items 3 times for seamless infinite loop
+        for (let i = 0; i < 3; i++) {
             items.forEach(item => {
-                const clone = item.cloneNode(true);
-                carousel.appendChild(clone);
+                carousel.appendChild(item.cloneNode(true));
             });
         }
+
+        // ── Mouse Drag Support ──
+        let isDragging = false, startX, scrollLeft;
+        carousel.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            carousel.classList.add('dragging');
+            startX = e.pageX;
+            scrollLeft = carousel.scrollLeft;
+        });
+        carousel.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            e.preventDefault();
+            const walk = (e.pageX - startX) * 1.5;
+            carousel.scrollLeft = scrollLeft - walk;
+        });
+        const stopDrag = () => {
+            if (isDragging) {
+                isDragging = false;
+                setTimeout(() => carousel.classList.remove('dragging'), 100);
+            }
+        };
+        carousel.addEventListener('mouseup', stopDrag);
+        carousel.addEventListener('mouseleave', stopDrag);
+
+        // ── Touch Swipe Support ──
+        carousel.addEventListener('touchstart', (e) => {
+            carousel.classList.add('dragging');
+            startX = e.touches[0].pageX;
+            scrollLeft = carousel.scrollLeft;
+        }, { passive: true });
+        carousel.addEventListener('touchmove', (e) => {
+            const walk = (e.touches[0].pageX - startX) * 1.5;
+            carousel.scrollLeft = scrollLeft - walk;
+        }, { passive: true });
+        carousel.addEventListener('touchend', () => {
+            setTimeout(() => carousel.classList.remove('dragging'), 300);
+        });
     });
 
     // ── Manual Book Carousel (for carousels without infinite-scroll) ──
